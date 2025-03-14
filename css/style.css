@@ -1,0 +1,15 @@
+:root {
+  --skyBlue: #00aeef;
+  --darkNavy: #002147;
+  --coolWhite: #f8f8f8;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+/* Start of navbar style */
+.bg-body-skyblue {
+  background-color: #00aeef;
+}
+/* End of navbar style */
