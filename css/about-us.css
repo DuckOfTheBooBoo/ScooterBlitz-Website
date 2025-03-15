@@ -13,7 +13,11 @@ h6 {
 }
 
 .text-darknavy {
-  color: var(--darkNavy);
+  color: var(--darkNavy) !important;
+}
+
+.text-coolWhite {
+  color: var(--coolWhite) !important;
 }
 
 /* About Us Styling Rules */
@@ -44,9 +48,25 @@ main > section {
   color: var(--darkNavy);
 }
 
+#footer-mission {
+  max-width: 100%;
+}
+
+#store-link > img {
+  width: 8rem;
+}
+
 @media screen and (min-width: 768px) {
   #company-about img {
     width: 50%;
+  }
+
+  #footer-mission {
+    max-width: 25%;
+  }
+
+  #footer-map {
+    display: none;
   }
 }
 
@@ -59,7 +79,7 @@ main > section {
 @keyframes autoShowAnimation {
   from {
     opacity: 0;
-    transform: translateY(200px) scale(0.3);
+    transform: translateY(200px) scale(0.5);
   }
   to {
     opacity: 1; 

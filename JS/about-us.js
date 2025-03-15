@@ -5,7 +5,7 @@ $(document).ready(function() {
     const textArray = text.split("-");
     let partIndex = 0;
     let charIndex = 0;
-    const typingSpeed = 90;
+    const typingSpeed = 60;
     const pauseDuration = 800;
 
     function type() {

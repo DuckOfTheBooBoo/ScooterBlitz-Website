@@ -27,7 +27,7 @@
     />
     <title>About Us</title>
   </head>
-  <body class="bg-coolwhite">
+  <body class="bg-coolwhite d-flex flex-column justify-content-center">
     <nav class="navbar navbar-expand-sm navbar-light bg-body-skyblue">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Placeholder</a>
@@ -50,15 +50,18 @@
       </div>
     </nav>
 
-    <main class="d-flex flex-column gap-2">
-      <section id="headline" class="container vh-100">
+    <main class="d-flex flex-column gap-2 px-5">
+      <section id="headline" class="container-fluid vh-100">
         <div class="d-flex h-100 align-items-center justify-content-center">
-          <h1 id="headline-text" class="text-left mx-1 mt-3 text-darknavy fw-semibold">
+          <h1
+            id="headline-text"
+            class="text-left text-lg-center mx-1 mt-3 text-darknavy fw-semibold"
+          >
             Redefining Urban Mobility-One Ride at a Time
           </h1>
         </div>
       </section>
-      <section id="company-about" class="container autoShow">
+      <section id="company-about" class="container-fluid autoShow">
         <h1>About Us</h1>
         <div
           class="d-flex h-100 flex-column flex-lg-row gap-2 w-100 align-items-center justify-content-center p-2 gap-4"
@@ -75,12 +78,12 @@
           </p>
         </div>
       </section>
-      <section id="company-mission" class="container autoShow">
+      <section id="company-mission" class="container-fluid autoShow">
         <h1>Our Mission</h1>
         <div
           class="d-flex flex-column flex-lg-row h-100 justify-content-center align-items-start gap-4"
         >
-          <div class="container mission">
+          <div class="container-fluid mission">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -101,7 +104,7 @@
             <h3 class="fs-2">Sustainability</h3>
             <p class="fs-5 text-center">Every ride helps cut emissions</p>
           </div>
-          <div class="container mission">
+          <div class="container-fluid mission">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -124,9 +127,11 @@
               <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
             </svg>
             <h3 class="fs-2">Convinience</h3>
-            <p class="fs-5 text-center">Find a scooter, unlock, and go—simple!</p>
+            <p class="fs-5 text-center">
+              Find a scooter, unlock, and go—simple!
+            </p>
           </div>
-          <div class="container mission">
+          <div class="container-fluid mission">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -148,28 +153,102 @@
               <path d="M3 4h8" />
             </svg>
             <h3 class="fs-2">Community</h3>
-            <p class="fs-5 text-center">Partnering with local businesses & city leaders.</p>
+            <p class="fs-5 text-center">
+              Partnering with local businesses & city leaders.
+            </p>
           </div>
         </div>
       </section>
-      <section id="team" class="container vh-100 autoShow">
+      <section id="team" class="container-fluid vh-100 autoShow">
         <h1>Meet The Team!</h1>
-        <div class="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center mt-5">
-            <div class="d-flex flex-column align-items-center gap-2">
-                <img src="/assets/img/dev1.jpeg" alt="" class="img-fluid rounded-circle w-50">
-                <h3>Arajdian Altaf</h3>
-                <p>Software Developer</p>
-            </div>
-            <div class="d-flex flex-column align-items-center gap-2">
-                <img src="/assets/img/dev2.jpeg" alt="" class="img-fluid rounded-circle w-50">
-                <h3>Naufal Adhi Prakasa</h3>
-                <p>Software Developer</p>
-            </div>
+        <div
+          class="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center mt-5"
+        >
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img
+              src="/assets/img/dev1.jpeg"
+              alt=""
+              class="img-fluid rounded-circle w-50"
+            />
+            <h3>Arajdian Altaf</h3>
+            <p>Software Developer</p>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img
+              src="/assets/img/dev2.jpeg"
+              alt=""
+              class="img-fluid rounded-circle w-50"
+            />
+            <h3>Naufal Adhi Prakasa</h3>
+            <p>Software Developer</p>
+          </div>
         </div>
       </section>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <footer
+      id="company-footer"
+      class="container-fluid bg-body-skyblue py-5 px-3 d-flex flex-column gap-3 w-100"
+    >
+      <div class="footer-item d-flex flex-row w-100 gap-3">
+        <div
+          id="footer-mission"
+          class="text-coolWhite text-center text-lg-start fw-medium fs-6 w-10"
+        >
+          We're dedicated to elevating brief travels, contributing to a more
+          seamless and efficient urban environment for everyone.
+        </div>
+        <div id="footer-map" class="d-none d-lg-flex flex-row gap-3 justify-content-start">
+          <div class="d-flex flex-column text-coolWhite">
+            <h3 class="text-coolWhite fw-semibold mb-3">Company</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/pages/about-us.html"
+                  class="text-coolWhite text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column text-coolWhite">
+            <h3 class="text-coolWhite fw-semibold mb-3">Contact Us</h3>
+            <ul class="list-unstyled">
+              <li>E-mail</li>
+              <li>Phone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        id="store-link"
+        class="footer-item d-flex flex-row w-100 justify-content-center gap-3"
+      >
+        <img
+          src="https://cdn.prod.website-files.com/63c4acbedbab5dea8b1b98cd/63c4acbedbab5d05ad1b9904_appstore-white%402x.webp"
+          loading="lazy"
+          alt="app store"
+          class=""
+        />
+        <img
+          src="https://cdn.prod.website-files.com/63c4acbedbab5dea8b1b98cd/63c4acbedbab5de95d1b9903_googleplay-white%402x.webp"
+          loading="lazy"
+          alt="google play"
+          class=""
+        />
+      </div>
+      <div
+        id="license"
+        class="footer-item text-coolWhite text-center fw-medium"
+      >
+        Copyright 2025 ScooterBlitz Co Limited
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="/JS/about-us.js"></script>
   </body>
 </html>
