@@ -10,6 +10,6 @@
 
 /* Start of navbar style */
 .bg-body-skyblue {
-  background-color: #00aeef;
+  background-color: var(--skyBlue);
 }
 /* End of navbar style */
