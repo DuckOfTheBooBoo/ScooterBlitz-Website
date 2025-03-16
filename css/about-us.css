@@ -90,7 +90,7 @@ main > section {
 }
 
 .devCard:hover > * {
-  transform: translateY(-1rem);
+  transform: translateY(-0.2rem);
   text-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
 
