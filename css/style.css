@@ -1,7 +1,7 @@
 :root {
   --skyBlue: #00afef;
   --darkNavy: #002147;
-  --coolWhite: #;
+  --coolWhite: #f5f5f5;
 }
 
 * {
@@ -17,15 +17,8 @@
   background-color: var(--skyBlue);
 }
 
-.nav-brand-text {
-  color: var(--darkNavy) !important;
-  font-weight: 600;
-}
-
-.navbar-nav a.nav-text {
-  color: var(--darkNavy) !important;
-  font-weight: 600;
-  line-height: 21px;
+.bg-coolwhite {
+  background-color: var(--coolWhite) !important;
 }
 
 /* End of navbar style */
