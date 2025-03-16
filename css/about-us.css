@@ -8,18 +8,6 @@ h6 {
   color: var(--darkNavy) !important;
 }
 
-.bg-coolwhite {
-  background-color: var(--coolWhite);
-}
-
-.text-darknavy {
-  color: var(--darkNavy) !important;
-}
-
-.text-coolWhite {
-  color: var(--coolWhite) !important;
-}
-
 /* About Us Styling Rules */
 #headline h1 {
   font-size: 3rem;

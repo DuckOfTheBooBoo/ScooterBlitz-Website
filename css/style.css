@@ -8,6 +8,18 @@
   font-family: "Poppins";
 }
 
+.bg-coolwhite {
+  background-color: var(--coolWhite);
+}
+
+.text-darknavy {
+  color: var(--darkNavy) !important;
+}
+
+.text-coolWhite {
+  color: var(--coolWhite) !important;
+}
+
 .section-gap {
   margin-bottom: 8rem;
 }
