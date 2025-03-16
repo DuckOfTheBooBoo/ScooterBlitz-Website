@@ -51,8 +51,8 @@ nav {
 main > section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  max-height: fit-content;
+  min-height: fit-content;
+  max-height: 100vh;
 }
 
 .mission {
@@ -113,10 +113,10 @@ main > section {
 }
 
 /* Animations */
-/* .autoShow {
+.autoShow {
   animation: autoShowAnimation both;
   animation-timeline: view(90% 5%);
-} */
+}
 
 @keyframes autoShowAnimation {
   from {
