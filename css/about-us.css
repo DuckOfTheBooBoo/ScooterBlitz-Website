@@ -8,18 +8,6 @@ h6 {
   color: var(--darkNavy) !important;
 }
 
-.bg-coolwhite {
-  background-color: var(--coolWhite);
-}
-
-.text-darknavy {
-  color: var(--darkNavy) !important;
-}
-
-.text-coolWhite {
-  color: var(--coolWhite) !important;
-}
-
 /* About Us Styling Rules */
 #headline h1 {
   font-size: 3rem;
@@ -69,22 +57,6 @@ main > section {
   color: var(--darkNavy);
 }
 
-#footer-mission {
-  max-width: 100%;
-}
-
-#store-link > img {
-  width: 8rem;
-}
-
-.separator {
-  width: 100%;
-  content: '';
-  border-bottom: 1px solid var(--coolWhite);
-  margin: 1rem 0;
-}
-
-
 .devCard > * {
   transition: all 0.2s ease-in-out;
 }
@@ -101,14 +73,6 @@ main > section {
 @media screen and (min-width: 768px) {
   #company-about img {
     width: 50%;
-  }
-
-  #footer-mission {
-    max-width: 25%;
-  }
-
-  #footer-map {
-    display: none;
   }
 }
 
