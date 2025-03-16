@@ -28,9 +28,9 @@
     <title>About Us</title>
   </head>
   <body class="bg-coolwhite d-flex flex-column justify-content-center">
-    <nav class="navbar navbar-expand-sm navbar-light bg-body-skyblue">
+    <nav class="navbar navbar-expand-sm navbar-light bg-body-skyblue position-sticky top-0 start-0 z-3 defaultNavState">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Placeholder</a>
+        <a class="navbar-brand text-coolWhite" href="#">Placeholder</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,7 +44,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarID">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-coolWhite" aria-current="page" href="#">Home</a>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
       <section id="company-about" class="container-fluid autoShow">
         <h1>About Us</h1>
         <div
-          class="d-flex h-100 flex-column flex-lg-row gap-2 w-100 align-items-center justify-content-center p-2 gap-4"
+          class="d-flex h-100 flex-column flex-lg-row gap-2 w-100 align-items-center justify-content-center p-2 gap-4 flex-grow-1"
         >
           <img
             src="/assets/img/illus-optimized.png"
@@ -81,7 +81,7 @@
       <section id="company-mission" class="container-fluid autoShow">
         <h1>Our Mission</h1>
         <div
-          class="d-flex flex-column flex-lg-row h-100 justify-content-center align-items-start gap-4"
+          class="d-flex flex-column flex-lg-row h-100 justify-content-center align-items-center gap-4 flex-grow-1"
         >
           <div class="container-fluid mission">
             <svg
@@ -162,26 +162,30 @@
       <section id="team" class="container-fluid vh-100 autoShow">
         <h1>Meet The Team!</h1>
         <div
-          class="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center mt-5"
+          class="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center mt-5 flex-grow-1"
         >
-          <div class="d-flex flex-column align-items-center gap-2">
-            <img
-              src="/assets/img/dev1.jpeg"
-              alt=""
-              class="img-fluid rounded-circle w-50"
-            />
-            <h3>Arajdian Altaf</h3>
-            <p>Software Developer</p>
-          </div>
-          <div class="d-flex flex-column align-items-center gap-2">
-            <img
-              src="/assets/img/dev2.jpeg"
-              alt=""
-              class="img-fluid rounded-circle w-50"
-            />
-            <h3>Naufal Adhi Prakasa</h3>
-            <p>Software Developer</p>
-          </div>
+          <a href="https://github.com/DuckOfTheBooBoo" class="text-decoration-none">
+            <div class="d-flex flex-column align-items-center gap-2 devCard">
+              <img
+                src="/assets/img/dev1.jpeg"
+                alt=""
+                class="img-fluid rounded-circle w-50  mb-3"
+              />
+              <h3>Arajdian Altaf</h3>
+              <p>Software Developer</p>
+            </div>
+          </a>
+          <a href="https://github.com/FallAPI" class="text-decoration-none">
+            <div class="d-flex flex-column align-items-center gap-2 devCard">
+              <img
+                src="/assets/img/dev2.jpeg"
+                alt=""
+                class="img-fluid rounded-circle w-50 mb-3"
+              />
+              <h3>Naufal Adhi Prakasa</h3>
+              <p>Software Developer</p>
+            </div>
+          </a>
         </div>
       </section>
     </main>
@@ -220,6 +224,7 @@
           </div>
         </div>
       </div>
+      <div class="separator"></div>
       <div
         id="store-link"
         class="footer-item d-flex flex-row w-100 justify-content-center gap-3"
@@ -237,6 +242,7 @@
           class=""
         />
       </div>
+      <div class="separator"></div>
       <div
         id="license"
         class="footer-item text-coolWhite text-center fw-medium"

@@ -25,11 +25,32 @@ h6 {
   font-size: 3rem;
 }
 
+.defaultNavState {
+  background-color: var(--skyBlue) !important;
+  color: var(--coolWhite) !important;
+}
+
+.scrolledNavState {
+  background: rgba(0, 174, 239, 0.5) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  margin: 0 1rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+nav {
+  transition : all 0.3s ease-in-out !important;
+}
+
 #company-about img {
   width: 100%;
 }
 
 main > section {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   max-height: fit-content;
 }
@@ -56,6 +77,27 @@ main > section {
   width: 8rem;
 }
 
+.separator {
+  width: 100%;
+  content: '';
+  border-bottom: 1px solid var(--coolWhite);
+  margin: 1rem 0;
+}
+
+
+.devCard > * {
+  transition: all 0.2s ease-in-out;
+}
+
+.devCard:hover > * {
+  transform: translateY(-1rem);
+  text-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.devCard:hover > img {
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
 @media screen and (min-width: 768px) {
   #company-about img {
     width: 50%;
@@ -71,10 +113,10 @@ main > section {
 }
 
 /* Animations */
-.autoShow {
+/* .autoShow {
   animation: autoShowAnimation both;
   animation-timeline: view(90% 5%);
-}
+} */
 
 @keyframes autoShowAnimation {
   from {
