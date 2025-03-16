@@ -1,15 +1,56 @@
 :root {
-  --skyBlue: #00aeef;
+  --skyBlue: #00afef;
   --darkNavy: #002147;
-  --coolWhite: #f8f8f8;
+  --coolWhite: #;
 }
 
 * {
   font-family: "Poppins";
 }
 
+.section-gap {
+  margin-bottom: 8rem;
+}
+
 /* Start of navbar style */
 .bg-body-skyblue {
-  background-color: #00aeef;
+  background-color: var(--skyBlue);
 }
+
+.nav-brand-text {
+  color: var(--darkNavy) !important;
+  font-weight: 600;
+}
+
+.navbar-nav a.nav-text {
+  color: var(--darkNavy) !important;
+  font-weight: 600;
+  line-height: 21px;
+}
+
 /* End of navbar style */
+.main-text {
+  color: var(--darkNavy) !important;
+}
+
+.sub-text {
+  color: var(--darkNavy) !important;
+}
+
+.sub-text > span {
+  color: var(--skyBlue) !important;
+  font-weight: 600;
+}
+
+.jumbotron-fullscreen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.jumbotron-fullscreen .container-fluid {
+  padding: 0 15px;
+}
+/* Main section style */
