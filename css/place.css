@@ -1,0 +1,13 @@
+#jumbotron {
+    background-image: url('/assets/img/ui.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position: center;
+    position: relative;
+}
+
+#jumbotron-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
