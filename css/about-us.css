@@ -9,7 +9,7 @@ h6 {
 }
 
 .bg-coolwhite {
-  background-color: var(--coolWhite) !important;
+  background-color: var(--coolWhite);
 }
 
 .text-darknavy {
@@ -51,8 +51,8 @@ nav {
 main > section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  max-height: fit-content;
+  min-height: fit-content;
+  max-height: 100vh;
 }
 
 .mission {
@@ -101,21 +101,13 @@ main > section {
   #company-about img {
     width: 50%;
   }
-
-  #footer-mission {
-    max-width: 25%;
-  }
-
-  #footer-map {
-    display: none;
-  }
 }
 
 /* Animations */
-/* .autoShow {
+.autoShow {
   animation: autoShowAnimation both;
   animation-timeline: view(90% 5%);
-} */
+}
 
 @keyframes autoShowAnimation {
   from {

@@ -1,0 +1,24 @@
+#footer-mission {
+    max-width: 100%;
+}
+
+#store-link > img {
+    width: 8rem;
+}
+
+.separator {
+    width: 100%;
+    content: '';
+    border-bottom: 1px solid var(--coolWhite);
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    #footer-mission {
+        max-width: 25%;
+    }
+
+    #footer-map {
+        display: none;
+    }
+}
