@@ -29,24 +29,9 @@
 
 <body class="bg-coolwhite d-flex flex-column justify-content-center">
   <!-- navbar section -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-coolWhite-glassmorphism position-sticky top-0 start-0 z-3 defaultNavState">
-    <div class="container-fluid d-flex justify-content-between justify-content-sm-around w-100">
-      <a class="navbar-brand text-coolWhite" href="#">
-        <img id="scooterblitz-img" src="/assets/svg/scooterblitz.svg" alt="ScooterBlitz" class="d-inline-block align-text-top scooterblitz-img-defaultState" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
-        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="navbarID">
-        <div class="navbar-nav">
-          <a class="nav-link active text-darkNavy fw-semibold" aria-current="page" href="../index.html">Home</a>
-          <a class="nav-link active text-darkNavy fw-semibold" aria-current="page" href="/pages/about-us.html">About Us</a>
-          <a class="nav-link active text-darkNavy fw-semibold" aria-current="page" href="/pages/contact-us.html">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div style="position: sticky; top: 0; z-index: 1000;">
+    <navbar-component></navbar-component>
+  </div>
   <!-- End of navbar section -->
 
   <!-- Main section -->
@@ -55,9 +40,6 @@
       <h1 class="display-5 fw-bold main-text">Ready To Roll?</h1>
       <p class="col-md-12 fs-4 sub-text">
         Embark on an electrifying adventure with <span>ScooterBlitz!</span> We’re here to make every ride unforgettable.
-        Whether you're zipping through the city or exploring new neighborhoods, our eco-friendly scooters are your
-        ticket
-        to freedom and fun.
       </p>
     </div>
   </div>
@@ -124,7 +106,7 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/components/footer/footer.js"></script>
-<script src="/JS/about-us.js"></script>
+<script src="/components/navbar/navbar.js"></script>
 <script>
   $(document).ready(function () {
     const testimonial = [
