@@ -12,7 +12,7 @@ class NavbarComponent extends HTMLElement {
       @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
       </style>
       <nav
-        class="navbar navbar-expand-sm navbar-light bg-coolWhite-glassmorphism position-sticky top-0 start-0 z-3 defaultNavState">
+        class="navbar navbar-expand-sm navbar-light position-sticky top-0 start-0 z-3 defaultNavState">
         <div class="container-fluid d-flex justify-content-between justify-content-sm-around w-100">
           <a class="navbar-brand text-coolWhite" href="#">
             <img id="scooterblitz-img" src="/assets/svg/scooterblitz.svg" alt="ScooterBlitz"
