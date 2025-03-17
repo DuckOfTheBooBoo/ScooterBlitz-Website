@@ -31,7 +31,7 @@ $(document).ready(function() {
     let atTop = true;
 
     function checkScroll() {
-        if ($(window).scrollTop() === 0) {
+        if ($(window).scrollTop() <= 20) {
             if (!atTop) { 
                 atTop = true;
                 $('nav').removeClass('scrolledNavState')
