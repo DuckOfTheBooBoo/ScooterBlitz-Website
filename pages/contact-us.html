@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ScooterBlitz</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/about-us.css" />
+    <link rel="stylesheet" href="/css/contact-us.css" />
+
+    <!-- boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- end of boostrap css -->
+
+    <!-- Custome fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-coolwhite d-flex flex-column justify-content-center">
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-body-skyblue position-sticky top-0 start-0 z-3 defaultNavState">
+        <div class="container-fluid">
+            <a class="navbar-brand text-coolWhite" href="#">ScooterBlitz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarID">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-coolWhite" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link active text-coolWhite" aria-current="page" href="about-us.html">About
+                        Us</a>
+                    <a class="nav-link active text-coolWhite" aria-current="page" href="contact-us.html">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar section -->
+
+    <!-- Main section -->
+    <div class="p-5 mb-5 bg-coolwhite rounded-3">
+        <div class="container">
+            <h2 class="mb-4 fw-bold text-center main-text">Get in Touch</h1>
+                <p class="mb-5 sub-text text-center">
+                    Have a question about our scooters, pricing, or services? Want to suggest a new location for
+                    ScooterBlitz? We’d love to
+                    hear from you! Reach out to us via email, phone, or fill out the form below, and we’ll get back to
+                    you
+                    as soon as
+                    possible.
+                </p>
+                <!-- form -->
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                            required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State/Region</label>
+                        <input type="text" class="form-control" id="state" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Why do you want ScooterBlitz in your area?</label>
+                        <textarea class="form-control" id="message" rows="5"
+                            placeholder="Tell us why ScooterBlitz would be great for your community!"
+                            required></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-skyblue btn-lg">Submit Request</button>
+                    </div>
+
+                </form>
+        </div>
+    </div>
+    <!-- End of main section -->
+
+
+
+    <!-- Footer -->
+    <footer id="company-footer" class="container-fluid bg-body-skyblue py-5 px-3 d-flex flex-column gap-3 w-100">
+        <div class="footer-item d-flex flex-row w-100 gap-3">
+            <div id="footer-mission" class="text-coolWhite text-center text-lg-start fw-medium fs-6 w-10">
+                We're dedicated to elevating brief travels, contributing to a more
+                seamless and efficient urban environment for everyone.
+            </div>
+            <div id="footer-map" class="d-none d-lg-flex flex-row gap-3 justify-content-start">
+                <div class="d-flex flex-column text-coolWhite">
+                    <h3 class="text-coolWhite fw-semibold mb-3">Company</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/pages/about-us.html" class="text-coolWhite text-decoration-none">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column text-coolWhite">
+                    <h3 class="text-coolWhite fw-semibold mb-3">Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li>E-mail</li>
+                        <li>Phone</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div id="store-link" class="footer-item d-flex flex-row w-100 justify-content-center gap-3">
+            <img src="https://cdn.prod.website-files.com/63c4acbedbab5dea8b1b98cd/63c4acbedbab5d05ad1b9904_appstore-white%402x.webp"
+                loading="lazy" alt="app store" class="" />
+            <img src="https://cdn.prod.website-files.com/63c4acbedbab5dea8b1b98cd/63c4acbedbab5de95d1b9903_googleplay-white%402x.webp"
+                loading="lazy" alt="google play" class="" />
+        </div>
+        <div class="separator"></div>
+        <div id="license" class="footer-item text-coolWhite text-center fw-medium">
+            Copyright 2025 ScooterBlitz Co Limited
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/JS/about-us.js"></script>
+</body>
+
+</html>
