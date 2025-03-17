@@ -17,10 +17,6 @@
   background-color: var(--skyBlue);
 }
 
-.bg-coolwhite {
-  background-color: var(--coolWhite) !important;
-}
-
 /* End of navbar style */
 .main-text {
   color: var(--darkNavy) !important;
