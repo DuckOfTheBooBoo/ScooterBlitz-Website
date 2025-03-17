@@ -80,6 +80,9 @@
 }
 /* Main section style */
 
+nav {
+  transition: all 0.3s ease-in-out !important;
+}
 
 #scooterblitz-img {
   width: 30px;

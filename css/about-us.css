@@ -25,10 +25,6 @@ h6 {
   font-size: 3rem;
 }
 
-nav {
-  transition: all 0.3s ease-in-out !important;
-}
-
 #company-about img {
   width: 100%;
 }
