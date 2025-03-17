@@ -36,8 +36,10 @@ $(document).ready(function() {
                 atTop = true;
                 $('nav').removeClass('scrolledNavState')
                 $('nav').addClass('defaultNavState')
-                $('nav a').addClass('text-coolWhite')
-                $('nav a').removeClass('text-darkNavy')
+                $('nav a').addClass('text-darkNavy')
+                $('nav a').removeClass('text-coolWhite')
+                $('#scooterblitz-img').addClass('scooterblitz-img-defaultState')
+                $('#scooterblitz-img').removeClass('scooterblitz-img-scrolledState')
                 console.log("User is at the top of the page");
             }
         } else {
@@ -45,12 +47,15 @@ $(document).ready(function() {
                 atTop = false;
                 $('nav').removeClass('defaultNavState')
                 $('nav').addClass('scrolledNavState')
-                $('nav a').addClass('text-darkNavy')
-                $('nav a').removeClass('text-coolWhite')
+                $('nav a').addClass('text-coolWhite')
+                $('nav a').removeClass('text-darkNavy')
+                $('#scooterblitz-img').addClass('scooterblitz-img-scrolledState')
+                $('#scooterblitz-img').removeClass('scooterblitz-img-defaultState')
                 console.log("User scrolled down");
             }
         }
     }
 
     $(window).on("scroll", checkScroll);
+    $("html, body").animate({ scrollTop: 0 }, "fast");
 });

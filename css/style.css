@@ -9,7 +9,11 @@
 }
 
 .bg-coolwhite {
-  background-color: var(--coolWhite);
+  background-color: var(--coolWhite) !important;
+}
+
+.color-skyblue {
+  color: var(--skyBlue) !important;
 }
 
 .text-darknavy {
@@ -19,6 +23,26 @@
 .text-coolWhite {
   color: var(--coolWhite) !important;
 }
+
+
+.defaultNavState {
+  background-color: var(--coolWhite) !important;
+  color: var(--skyBlue) !important;
+}
+
+.scrolledNavState {
+  /* background: rgba(0, 174, 239, 0.5) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  margin: 0 1rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important; */
+  background-color: var(--skyBlue) !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 
 .section-gap {
   margin-bottom: 8rem;
@@ -55,3 +79,24 @@
   padding: 0 15px;
 }
 /* Main section style */
+
+
+#scooterblitz-img {
+  width: 30px;
+  height: 30px;
+}
+
+.scooterblitz-img-defaultState {
+  filter: invert(59%) sepia(68%) saturate(4898%) hue-rotate(165deg) brightness(103%) contrast(101%);
+}
+
+.scooterblitz-img-scrolledState {
+  filter: invert(100%) sepia(1%) saturate(385%) hue-rotate(348deg) brightness(117%) contrast(92%);
+}
+
+@media screen and (min-width: 768px) {
+  #scooterblitz-img {
+    width: 50px;
+    height: 50px;
+  }
+}
