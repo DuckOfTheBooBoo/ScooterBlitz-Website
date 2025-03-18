@@ -19,6 +19,13 @@
     overflow: hidden;
 }
 
+#scooter-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateY(-3px);
+    filter: ;
+}
+
 @media screen and (min-width: 770px) {
     #map-flex-container {
         width: 50%;   

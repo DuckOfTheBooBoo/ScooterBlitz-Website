@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Where to find us</title>
-    
+
     <!-- Leaflet.js -->
-    <link rel="stylesheet" href="/libs/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="/libs/leaflet/leaflet.css" />
     <script src="/libs/leaflet/leaflet.js"></script>
 
     <!-- my css -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/place.css" />
-    
 
     <!-- boostrap css -->
     <link
@@ -29,7 +28,6 @@
     ></script>
     <!-- end of boostrap css -->
 
-
     <!-- Custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +37,9 @@
     />
   </head>
 
-  <body class="bg-coolwhite d-flex flex-column justify-content-center overflow-x-hidden">
+  <body
+    class="bg-coolwhite d-flex flex-column justify-content-center overflow-x-hidden"
+  >
     <navbar-component
       class="position-sticky top-0 start-0 z-3"
     ></navbar-component>
@@ -52,14 +52,30 @@
           <p id="place-name" class="text-coolWhite fw-semibold fs-1 mb-1">
             Location Name
           </p>
-          <p id="place-address" class="mb-0 text-coolWhite fw-medium">Location Address</p>
+          <p id="place-address" class="mb-0 text-coolWhite fw-medium">
+            Location Address
+          </p>
         </div>
       </section>
-      <section class="d-flex flex-column flex-lg-row px-3 mt-3 w-100 justify-content-around">
+      <section
+        class="d-flex flex-column flex-lg-row px-3 mt-3 w-100 justify-content-around"
+      >
         <div class="d-flex flex-column mb-3">
           <h2 class="fs-2 fw-semibold text-darknavy mb-2">Description</h2>
-          <p class="fs-3 fw-medium">Available Unit: <span id="av_unit_val" class="fw-semibold"></span></p>
-          <p class="fs-3 fw-medium">Operational Area: <span id="op_area_val" class="fw-semibold"></span> km<sup>2</sup></p>
+          <p class="fs-3 fw-medium">
+            Available Unit: <span id="av_unit_val" class="fw-semibold"></span
+            ><span class="ms-1"
+              ><img
+                class="scooterblitz-img-defaultState"
+                id="scooter-icon"
+                src="/assets/svg/scooterblitz.svg"
+                alt=""
+            /></span>
+          </p>
+          <p class="fs-3 fw-medium">
+            Operational Area:
+            <span id="op_area_val" class="fw-semibold"></span> km<sup>2</sup>
+          </p>
         </div>
         <div class="d-flex flex-column vh-100 mb-3" id="map-flex-container">
           <h2 class="fs-2 fw-semibold text-darknavy mb-2">Map View</h2>
