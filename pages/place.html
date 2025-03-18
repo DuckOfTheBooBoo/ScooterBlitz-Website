@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Where to find us</title>
+    
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="/libs/leaflet/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <!-- my css -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/place.css" />
+    
 
     <!-- boostrap css -->
     <link
@@ -24,9 +29,6 @@
     ></script>
     <!-- end of boostrap css -->
 
-    <!-- Leaflet.js -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <!-- Custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,24 +46,24 @@
     <main>
       <section id="jumbotron" class="container-fluid vh-100">
         <div
-          class="position-absolute start-0 vw-100 px-3"
+          class="position-absolute start-0 vw-100 px-3 py-4"
           id="jumbotron-content"
         >
           <p id="place-name" class="text-coolWhite fw-semibold fs-1 mb-1">
-            Universitas Indonesia
+            Location Name
           </p>
-          <p id="place-address" class="mb-0">Jalan Bjir</p>
+          <p id="place-address" class="mb-0 text-coolWhite fw-medium">Location Address</p>
         </div>
       </section>
-      <section class="d-flex flex-column flex-lg-row px-3 mt-3">
+      <section class="d-flex flex-column flex-lg-row px-3 mt-3 w-100 justify-content-around">
         <div class="d-flex flex-column mb-3">
           <h2 class="fs-2 fw-semibold text-darknavy mb-2">Description</h2>
-          <p class="fs-3 fw-medium">Available Unit: <span id="av_unit_val fw-semibold"></span></p>
-          <p class="fs-3 fw-medium">Operational Area: <span id="op_area_val fw-semibold"></span>KM<sup>2</sup></p>
+          <p class="fs-3 fw-medium">Available Unit: <span id="av_unit_val" class="fw-semibold"></span></p>
+          <p class="fs-3 fw-medium">Operational Area: <span id="op_area_val" class="fw-semibold"></span> km<sup>2</sup></p>
         </div>
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column vh-100 mb-3" id="map-flex-container">
           <h2 class="fs-2 fw-semibold text-darknavy mb-2">Map View</h2>
-          <div id="leaflet-map"></div>
+          <div id="map" class="overflow-hidden z-1"></div>
         </div>
       </section>
     </main>
@@ -72,6 +74,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/components/navbar/navbar.js"></script>
     <script src="/components/footer/footer.js"></script>
-    <script src="/JS/place.js"></script>
+    <script type="module" src="/JS/place.js"></script>
   </body>
 </html>
