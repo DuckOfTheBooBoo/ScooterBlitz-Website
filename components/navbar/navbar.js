@@ -14,7 +14,7 @@ class NavbarComponent extends HTMLElement {
       <nav
         class="navbar navbar-expand-sm navbar-light position-sticky top-0 start-0 z-3 defaultNavState">
         <div class="container-fluid d-flex justify-content-between justify-content-sm-around w-100">
-          <a class="navbar-brand text-coolWhite" href="#">
+          <a class="navbar-brand text-coolWhite" href="/">
             <img id="scooterblitz-img" src="/assets/svg/scooterblitz.svg" alt="ScooterBlitz"
               class="d-inline-block align-text-top scooterblitz-img-defaultState" />
           </a>
