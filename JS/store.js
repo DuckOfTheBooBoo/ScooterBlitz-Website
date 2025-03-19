@@ -1,13 +1,3 @@
-/**
- * title: string -> Name of the location
- * address: string -> Address of the location
- * slug: string -> URL slug
- * center: List<number> -> Coordinates of the location
- * zoom: number -> Zoom level of the map
- * markers: List<Array<number>> -> List of coordinates that will be used to mark scooter location on the map, also used to count number of available scooter unit
- * op_area_coor: List<Array<number>> -> List of coordinates that will be used to draw polygon on the map that marks the operational area
- * image_path: string -> URL path to the image of the location
- */
 export default [
   {
     title: "Universitas Indonesia",
@@ -208,3 +198,4 @@ export default [
     imagePath: "/assets/img/pik.jpg",
   },
 ];
+

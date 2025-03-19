@@ -91,3 +91,60 @@ nav {
   background-color: var(--skyBlue) !important;
   color: var(--coolWhite) !important;
 }
+
+/* Adjusting the card layout for different screens */
+.location-card {
+  width: 100%; /* Full width on small screens */
+  max-width: 18rem; /* Limit width on larger screens */
+}
+
+/* Mobile scroll container */
+.mobile-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+/* Ensure smooth scrolling */
+.mobile-scroll-container .location-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  margin-right: 10px;
+}
+
+.location-card {
+  width: 18rem;
+}
+
+.location-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+  }
+  .location-card {
+    width: 100%;
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .p-5 {
+    padding: 2rem !important;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
