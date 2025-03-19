@@ -1,7 +1,7 @@
 import data from "../JS/store.js";
 
 function degreesToRadians(degrees) {
-  return degrees * Math.PI / 180;
+  return (degrees * Math.PI) / 180;
 }
 
 // Area = earth_radius^2 / 2 * |sum_{i=1}^n(long_i - long_{i-1}) * (sin(lat_i) + sin(lat_{i-1}))|
@@ -12,7 +12,7 @@ function calculateAreaFromPolygonCoordinates(coordinates) {
   const last = coordinates[coordinates.length - 1];
   const closedCoords = [...coordinates];
 
-  if (first[0] !== last [0] || first[1] !== last[1]) {
+  if (first[0] !== last[0] || first[1] !== last[1]) {
     closedCoords.push(first);
   }
 
@@ -20,7 +20,10 @@ function calculateAreaFromPolygonCoordinates(coordinates) {
   let sum = 0;
 
   // Convert coordinates to radians as well as reverse the order of the coordinates biar ga kek tai
-  const radCoords = closedCoords.map(coord => [degreesToRadians(coord[1]), degreesToRadians(coord[0])]);
+  const radCoords = closedCoords.map((coord) => [
+    degreesToRadians(coord[1]),
+    degreesToRadians(coord[0]),
+  ]);
   for (let i = 1; i < radCoords.length; i++) {
     const prev = radCoords[i - 1];
     const curr = radCoords[i];
@@ -33,7 +36,7 @@ function calculateAreaFromPolygonCoordinates(coordinates) {
     sum += deltaLambda * sumSinPhi;
   }
 
-  return Math.abs(sum) * R * R / 2;
+  return (Math.abs(sum) * R * R) / 2;
 }
 
 $(document).ready(function () {
@@ -57,7 +60,11 @@ $(document).ready(function () {
   $("#place-name").text(locationData.title);
   $("#place-address").text(locationData.address);
   $("#av_unit_val").text(locationData.markers.length);
-  $("#op_area_val").text((calculateAreaFromPolygonCoordinates(locationData.opAreaCoor) / 100000).toFixed(2));
+  $("#op_area_val").text(
+    (
+      calculateAreaFromPolygonCoordinates(locationData.opAreaCoor) / 100000
+    ).toFixed(2)
+  );
 
   const customIcon = L.icon({
     iconUrl: "/assets/svg/marker.svg",
@@ -67,20 +74,29 @@ $(document).ready(function () {
   });
 
   // Initialize Leaflet map
-  const map = L.map("map", {
+  // Enable two fingers gesture for mobile view
+  const isMobile = window.innerWidth <= 768;
+  var map = L.map("map", {
     center: locationData.center,
     zoom: locationData.zoom,
     noWrap: true,
     maxZoom: 50,
   });
 
+  if (isMobile) {
+    map.scrollWheelZoom.disable();
+    map.gestureHandling.enable();
+  } else {
+    map.scrollWheelZoom.enable();
+    map.gestureHandling.disable();
+  }
+
   L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
     // attribution: "&copy; OpenStreetMap contributors",
     maxZoom: 20,
-    subdomains:['mt0','mt1','mt2','mt3']
+    subdomains: ["mt0", "mt1", "mt2", "mt3"],
   }).addTo(map);
 
-  
   // Initialize scooter marker
   locationData.markers.forEach((coor) => {
     // Add validation to check if coordinates are valid numbers
@@ -97,7 +113,6 @@ $(document).ready(function () {
       console.error("Invalid coordinates:", coor);
     }
   });
-  
 
   // Initialize operational area polygon
   // Flip the coordinates from (long, lat) to (lat, long) because GeoJSON decides to be a bitch by using easting-northing instead of northing-easting order. Long, lat?! Bajingan bajingan. Kenapa ga ikutin standar lat, long coba? Astaghfirullah hal adzhim cobaan saat bulan ramadhan. Berjam-jam gue double check value di polygon maker. Sumpah pengen gue tabok.
