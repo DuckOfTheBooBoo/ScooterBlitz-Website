@@ -1,4 +1,4 @@
-import data from "/JS/store.js";
+import data from "../JS/store.js";
 
 function degreesToRadians(degrees) {
   return degrees * Math.PI / 180;

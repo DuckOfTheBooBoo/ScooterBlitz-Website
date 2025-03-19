@@ -108,6 +108,38 @@
   </div>
   <!-- End of User Reviews -->
 
+  <!-- Where to find us -->
+  <div class="p-5 mb-5 bg-coolwhite">
+    <h2 class="text-center">Where to Find Us</h2>
+    <div class="container-fluid py-5">
+      <div id="carouselLocationSlide" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-inner">
+          <!-- Carousel items will be dynamically inserted here -->
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLocationSlide"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLocationSlide"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-md-none mobile-scroll-container">
+        <div class="d-flex flex-nowrap gap-3 overflow-auto" id="mobile-scroll-container">
+          <!-- Mobile location cards will be dynamically inserted here -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End of Where to Find Us -->
+
   <!-- Footer -->
   <footer-component></footer-component>
   <!-- End of Footer -->
@@ -117,6 +149,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/components/footer/footer.js"></script>
 <script src="/components/navbar/navbar.js"></script>
+<script type="module" src="JS/script.js"></script>
 <script>
   $(document).ready(function () {
     const testimonial = [
