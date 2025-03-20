@@ -15,8 +15,10 @@ class NavbarComponent extends HTMLElement {
         class="navbar navbar-expand-sm navbar-light position-fixed w-100 top-0 start-0 z-3 defaultNavState">
         <div class="container-fluid d-flex justify-content-between justify-content-sm-around w-100">
           <a class="navbar-brand text-coolWhite" href="/">
-            <img id="scooterblitz-img" src="/assets/svg/scooterblitz.svg" alt="ScooterBlitz"
+            <div id="nav-icon-wrapper">
+              <img id="scooterblitz-img" src="/assets/svg/scooterblitz.svg" alt="ScooterBlitz"
               class="d-inline-block align-text-top scooterblitz-img-defaultState" />
+            </div>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
             aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,16 +47,20 @@ class NavbarComponent extends HTMLElement {
     function checkScroll() {
       const nav = shadowRoot.querySelector("nav");
       const navLinks = shadowRoot.querySelectorAll("nav a");
-      const scooterblitzImg = shadowRoot.getElementById("scooterblitz-img");
+      const scooterblitzImg = shadowRoot.querySelector("#scooterblitz-img");
+      const navIconWrapper = shadowRoot.querySelector("#nav-icon-wrapper");
+      const navbarToggler = shadowRoot.querySelector('button.navbar-toggler');
 
       if ($(window).scrollTop() <= 20) {
         if (!atTop) {
           atTop = true;
           $(nav).removeClass("scrolledNavState").addClass("defaultNavState");
           // $(navLinks).addClass("text-darkNavy").removeClass("text-coolWhite");
+          navIconWrapper.style = "background-image: url('/assets/img/scooterblitz@2x.png') !important";
+          navbarToggler.style = "background-color: transparent !important";
           $(scooterblitzImg)
-            .addClass("scooterblitz-img-defaultState")
-            .removeClass("scooterblitz-img-scrolledState");
+          .addClass("scooterblitz-img-defaultState")
+          .removeClass("scooterblitz-img-scrolledState");
           console.log("User is at the top of the page");
         }
       } else {
@@ -62,6 +68,8 @@ class NavbarComponent extends HTMLElement {
           atTop = false;
           $(nav).removeClass("defaultNavState").addClass("scrolledNavState");
           // $(navLinks).addClass("text-coolWhite").removeClass("text-darkNavy");
+          navIconWrapper.style = "background-image: none";
+          navbarToggler.style = "background-color: var(--coolWhite) !important";
           $(scooterblitzImg)
             .addClass("scooterblitz-img-scrolledState")
             .removeClass("scooterblitz-img-defaultState");
