@@ -25,14 +25,23 @@
 <body class="bg-coolwhite d-flex flex-column justify-content-center">
   <navbar-component class="position-sticky top-0 start-0 z-3"></navbar-component>
 
-  <main class="d-flex flex-column gap-2 px-5">
-    <section id="headline" class="container-fluid vh-100">
-      <div class="d-flex h-100 align-items-center justify-content-center">
-        <h1 id="headline-text" class="text-left text-lg-center mx-1 mt-3 text-darknavy fw-semibold">
-          Redefining Urban Mobility-One Ride at a Time
+  <main class="d-flex flex-column gap-2">
+    <section id="headline" class="container-fluid vh-100 position-relative overflow-hidden">
+      <!-- Background Image -->
+      <div class="position-absolute top-0 start-0 w-100 h-100">
+        <img src="/assets/img/about-us.jpg" alt="Urban Mobility" class="w-100 h-100"
+          style="object-fit: cover; object-position: center; position: absolute;">
+      </div>
+
+      <!-- Content Overlay -->
+      <div class="d-flex h-100 align-items-center justify-content-center position-relative text-white text-center">
+        <h1 id="headline-text" class="text-left text-lg-center mx-1 mt-3 text-coolWhite fw-semibold">
+          Redefining Urban Mobility - One Ride at a Time
         </h1>
       </div>
     </section>
+
+
     <section id="company-about" class="container-fluid autoShow">
       <h1>About Us</h1>
       <div
