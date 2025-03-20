@@ -2,3 +2,11 @@
   background-color: var(--skyBlue) !important;
   color: var(--coolWhite) !important;
 }
+
+.main-text {
+  color: var(--darknavy) !important;
+}
+
+.sub-text {
+  color: var(--darknavy) !important;
+}
