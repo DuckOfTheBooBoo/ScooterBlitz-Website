@@ -29,59 +29,58 @@
 </head>
 
 <body class="bg-coolwhite d-flex flex-column justify-content-center">
-    <navbar-component
-      class="position-sticky top-0 start-0 z-3"
-    ></navbar-component>
+    <navbar-component class="position-sticky top-0 start-0 z-3"></navbar-component>
     <!-- End of navbar section -->
 
-    <!-- Main section -->
-    <div class="p-5 mb-5 bg-coolwhite rounded-3">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-center main-text">Get in Touch</h1>
-                <p class="mb-5 sub-text text-center">
-                    Have a question about our scooters, pricing, or services? Want to suggest a new location for
-                    ScooterBlitz? We’d love to
-                    hear from you! Reach out to us via email, phone, or fill out the form below, and we’ll get back to
-                    you
-                    as soon as
-                    possible.
-                </p>
-                <!-- form -->
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="fullName" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
-                            required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="city" class="form-label">City</label>
-                        <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="state" class="form-label">State/Region</label>
-                        <input type="text" class="form-control" id="state" placeholder="Enter your state" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="message" class="form-label">Why do you want ScooterBlitz in your area?</label>
-                        <textarea class="form-control" id="message" rows="5"
-                            placeholder="Tell us why ScooterBlitz would be great for your community!"
-                            required></textarea>
-                    </div>
-
-                    <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-skyblue btn-lg">Submit Request</button>
-                    </div>
-
-                </form>
+    <div class="hero-section">
+        <img src="/assets/img/contact-us.jpg" alt="ScooterBlitz in action" class="hero-image">
+        <div class="overlay"></div>
+        <div class="container hero-content d-flex flex-column justify-content-center align-items-center text-center">
+            <h2 class="mb-4 fw-bold main-text display-4">Get in Touch – We’re Here to Help!</h2>
+            <p class="mb-5 sub-text fs-5 mx-auto" style="max-width: 800px;">
+                Questions about our scooters, pricing, or services? Want to see ScooterBlitz in your area? Contact us
+                via email, phone,
+                or the form below—we’ll get back to you soon!
+            </p>
         </div>
     </div>
-    <!-- End of main section -->
+    <!-- End of hero section -->
 
+    <!-- Form section - now separate from main content -->
+    <div class="form-section">
+        <div class="container">
+            <h3 class="mb-4 text-center">Request ScooterBlitz in Your Area</h3>
+            <!-- form -->
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="state" class="form-label">State/Region</label>
+                    <input type="text" class="form-control" id="state" placeholder="Enter your state" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Why do you want ScooterBlitz in your area?</label>
+                    <textarea class="form-control" id="message" rows="5"
+                        placeholder="Tell us why ScooterBlitz would be great for your community!" required></textarea>
+                </div>
 
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-skyblue btn-lg">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End of form section -->
 
     <!-- Footer -->
     <footer-component></footer-component>
