@@ -36,15 +36,27 @@ class FooterComponent extends HTMLElement {
                   class="text-coolWhite text-decoration-none"
                   >About Us</a
                 >
-              </li>
+                </li>
+                <li><a
+                  href="/index.html#locations"
+                  class="text-coolWhite text-decoration-none"
+                  >Where to Find Us</a
+                ></li>
             </ul>
           </div>
           <div class="d-flex flex-column text-coolWhite">
             <h3 class="text-coolWhite fw-semibold mb-3">Contact Us</h3>
             <ul class="list-unstyled">
-              <li>E-mail</li>
-              <li>Phone</li>
-              <li>Fill out form</li>
+              <li>
+                <a href="mailto:contact@scooterblitz.com" class="text-coolWhite text-decoration-none">
+                  E-mail
+                </a>
+              </li>
+              <li>
+                <a href="/pages/contact-us.html#contact-head" class="text-coolWhite text-decoration-none">
+                Request new area
+                </>
+              </li>
             </ul>
           </div>
         </div>
